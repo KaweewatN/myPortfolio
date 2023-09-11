@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.top-menu-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px 0px 30px;
+    background-color: rgb(31, 31, 33, 0.8);
+}
+
+.top-menu-ul {
+    display: flex;
+    min-width: 20vmax;
+    justify-content: space-between;
+}
+
+.top-menu-h2 {
+    color: #ffffff;
+    font-size: 2.3vmax;
+    position: absolute;
+    top: 1.2vmax;
+}
+
+.top-menu-ul > a {
+    text-decoration: none;
+}
+
+.top-menu-li {
+    font-size: 1.5vmax;
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top-menu-li:hover {
+    color: #86FF70;
+    text-decoration: underline;
+}
+
+img.home-intro-image {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 50vmax;
+    z-index: -1;
+}
+
+div.introduce-words {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 44vmax;
+    background-color: rgb(31, 31, 33, 0.8);
+}
+
+h1.introduce-words-name {
+    font-size: 6.5vmax;
+    color: #fff;
+}
+
+h2.introduce-words-doing {
+    font-size: 4.3vmax;
+    color: #fff;
+}
+
+span.introduce-words-doing-typed {
+    color: #86FF70;
+}
+
+
+section.home-aboutme {
+    background-color: rgb(31, 31, 33);
+    padding: 6vmax 80px 30px 0px;
+    padding-left: 4vmax;
+}
+
+div.home-aboutme-text-container {
+    width: 50%;
+}
+
+h1.home-aboutme-title {
+    font-size: 2vmax;
+    color: #fff;
+}
+
+p.home-aboutme-text {
+    margin-top: 20px;
+    font-size: 1.7vmax;
+    line-height: 3vmax;
+    color: 	#b5afaf;
+}
+
+span.home-aboutme-text-more-info {
+    font-size: 1.5vmax;
+    color: #86FF70;
+    cursor: pointer;
+}
+
+span.home-aboutme-text-more-info:hover  {
+    text-decoration: underline;
+}
+
+ul.home-aboutme-social-media-ul {
+    margin-top: 25px;
+    width: 20vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.home-aboutme-social-media-li {
+    list-style: none;
+    font-size: 3vmax;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+li.home-aboutme-social-media-li:hover{
+    transform:translateY(-5px);
+}
+
+a.home-facebook {
+    color: #3b5998;
+}
+
+a.home-instagram {
+    color: #E4405F;
+}
+
+a.home-discord {
+    color: #5865F2;
+}
+
+a.home-github {
+    color: #fff;
+}
+
+a.home-linkdin {
+    color: #0A66C2;
+}
+
+div.home-aboutme-skills {
+    padding-top: 5vmax;
+}
+
+div.home-aboutme-skills-container {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    width: max-content;
+}
+
+div.home-aboutme-skills-sub-container {
+    display: flex;
+    align-items: center;
+    padding-left: 2vmax;
+}
+
+p.home-aboutme-skills-title {
+    color: #b5afaf;
+    margin-top: 5px;
+    font-size: 1.8vmax;
+}
+
+img.home-aboutme-skills-image-large {
+    width: 2.95vmax;
+    margin-right: 1vmax;
+    margin-top: 5px;
+}
+
+img.home-aboutme-skills-image {
+    width: 3.65vmax;
+    margin-right: 1vmax;
+}
+
+p.home-aboutme-skills-image {
+    font-size: 2.7vmax;
+    margin-right: 1vmax;
+    color: #fff;
+}
+
+section.home-project {
+    background-color: rgb(31, 31, 33);
+    padding: 3vmax 3vmax 40px 3vmax;
+    display: flex;
+    flex-direction: column;
+}
+h1.home-project-title {
+    font-size: 2vmax;
+    color: #fff;
+    padding-left: 1vmax;
+}
+
+div.home-project-all-container {
+    padding-top: 3vmax;
+    background-color: rgb(31, 31, 33);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    column-gap: 1vmax;
+    row-gap: 3vmax;
+}
+
+a.home-project-github-link {
+    text-decoration: none;
+}
+
+div.home-project-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 28.5vmax;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+div.home-project-container:hover {
+    transform: scale(102%);
+}
+
+img.home-project-image {
+    height: 18.5vmax;
+}
+
+div.home-project-text-container {
+    padding: 0px 2vmax 2vmax 2vmax;
+}
+
+h3.home-project-title {
+    color: #469538;
+    margin-top: 20px;
+    font-size: 1.7vmax;
+}
+
+p.home-project-languages {
+    font-size: 1.2vmax;
+    color: #898989;
+}
+
+p.home-project-description {
+    color: #363636;
+    margin-top: 10px;
+    font-size: 1.3vmax;
+}
+
+section.home-contact {
+    background-color: rgb(31, 31, 33);
+    padding: 3vmax 3vmax 40px 3vmax;
+    display: flex;
+    flex-direction: column;
+}
+h1.home-contact-title {
+    font-size: 2vmax;
+    color: #fff;
+    padding-left: 1vmax;
+}
+
+div.home-contact-container {
+    display: flex;
+    margin-bottom: 3vmax;
+}
+
+ul.home-contact-ul {
+    padding-top: 1vmax;
+}
+
+li.home-contact-li, li.home-contact-li>a {
+    list-style: none;
+    font-size: 1.7vmax;
+    line-height: 3.24vmax;
+    color: 	#b5afaf;
+    margin-left: 1vmax;
+}
+
+div.home-contact-contact-me-container {
+    margin-left: 10vmax;
+}
+
+p.home-contact-contact-me-p {
+    padding-top: 1.1vmax;
+    font-size: 1.7vmax;
+    color: 	#b5afaf;
+}
+
+div.home-contact-contact-me-form {
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+}
+
+input.home-contact-contact-me-input {
+    font-size: 1.2vmax;
+    padding: 0.5vmax;
+    margin-top: 1vmax;
+}
+
+textarea.home-contact-contact-me-textarea {
+    font-size: 1.2vmax;
+    padding: 0.5vmax;
+    margin-top: 1vmax;
+}
+
+input.home-contact-contact-me-submit {
+    margin-top: 1vmax;
+    font-size: 1.2vmax;
+    padding: 0.5vmax;
+    cursor: pointer;
+}
+
+input.home-contact-contact-me-submit:hover {
+    background-color: #86FF70;
+    color: white;
+}
