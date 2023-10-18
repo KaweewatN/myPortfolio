@@ -230,8 +230,9 @@ div.home-project-container:hover {
     transform: scale(102%);
 }
 
-img.home-project-image {
+div.home-project-image {
     height: 18.5vmax;
+    background-size: cover;
 }
 
 div.home-project-text-container {
@@ -273,11 +274,11 @@ div.home-contact-container {
 }
 
 ul.home-contact-ul {
+    padding-left: 2vmax;
     padding-top: 1vmax;
 }
 
 li.home-contact-li, li.home-contact-li>a {
-    list-style: none;
     font-size: 1.7vmax;
     line-height: 3.24vmax;
     color: 	#b5afaf;
@@ -313,6 +314,39 @@ p.home-contact-contact-me-p {
         justify-content: space-between;
         padding: 30px 30px 0px 30px;
         background-color: rgb(31, 31, 33, 0.8);
+    }
+
+    button.top-menu-button {
+        background-color: transparent;
+        color: #ffffff;
+        border: 0;
+        font-size: 2vmax;
+    }
+
+    ul.top-menu-ul-mobile {
+        position: absolute;
+        top: 10vmax;
+        right: 5vmax;
+        width: 15%;
+        border: 1px solid rgb(129, 129, 129);
+        padding: 5px 10px 5px 10px;
+    }
+
+    ul.top-menu-ul-mobile > a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.5vmax;
+    }
+
+    ul.top-menu-ul-mobile > a:hover {
+        color: #86FF70;
+    }
+
+    li.top-menu-li-mobile {
+        list-style: none;
+        margin-bottom: 5px;
+        border-bottom: 1px solid rgb(129, 129, 129);
+        text-decoration: none;
     }
 
     h1.introduce-words-name {
@@ -361,6 +395,12 @@ p.home-contact-contact-me-p {
         font-size: 1.6vmax;
     }
   }
+
+@media (min-width: 1px) and (max-width: 693px) {
+    ul.top-menu-ul-mobile {
+        width: 20%;
+    }
+}
 
 @media (min-width: 821px) and (max-width:  1290px) {
     div.home-project-all-container {

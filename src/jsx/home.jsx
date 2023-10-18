@@ -6,6 +6,8 @@ import {BsDiscord} from "react-icons/bs"
 import {BsGithub} from "react-icons/bs"
 import {BsLinkedin} from "react-icons/bs"
 import {SiDjango} from "react-icons/si"
+import {FaBars} from "react-icons/fa"
+import {ImCross} from "react-icons/im"
 import { useState, useEffect } from "react";
 import axios from "axios"
 import Tippy from "@tippyjs/react";
@@ -34,6 +36,12 @@ export default function Home() {
         deleteSpeed: 100
     });
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const hangleToggle = () => {
+        setIsOpen(!isOpen);
+    }
+
     return(
         <div className="background-container">
             <img src="home-intro-image.avif" className="home-intro-image" alt="home-intro-image"></img>
@@ -52,11 +60,22 @@ export default function Home() {
                 <div>
                     <h2 className="top-menu-h2">TK</h2>
                 </div>
-                <ul className="top-menu-ul">
-                    <a href="#aboutme"><li className="top-menu-li">ABOUT ME</li></a>
-                    <a href="#project"><li className="top-menu-li">PROJECT</li></a>
-                    <a href="#contact"><li className="top-menu-li">CONTACT</li></a>
-                </ul>
+                <button onClick={hangleToggle} className="top-menu-button"> 
+                    {isOpen ? <ImCross></ImCross> : <FaBars></FaBars>} 
+                </button>
+                {isOpen && (
+                    <ul className="top-menu-ul-mobile">
+                        <a href="#aboutme" onClick={hangleToggle}>
+                            <li className="top-menu-li-mobile">ABOUT ME</li>
+                        </a>
+                        <a href="#project" onClick={hangleToggle}>
+                            <li className="top-menu-li-mobile">PROJECT</li>
+                        </a>
+                        <a href="#contact" onClick={hangleToggle}>
+                            <li className="top-menu-li-mobile">CONTACT</li>
+                        </a>
+                    </ul>
+                )}
             </nav>
 
 
@@ -168,7 +187,10 @@ export default function Home() {
                     {project?.slice(0,6).map(res => (
                         <a href={res.githubLink} className="home-project-github-link">
                             <div className="home-project-container">
-                                <img src={res.image} className="home-project-image"></img>
+                                <div className="home-project-image"
+                                     style={{backgroundImage: `url(${res.image})`}}>
+                                </div>
+                                {/* <img src={res.image} className="home-project-image"></img> */}
                                 <div className="home-project-text-container">
                                     <h3 className="home-project-title">{res.name}</h3>
                                     <p className="home-project-languages">{res.languages}</p>
@@ -186,7 +208,7 @@ export default function Home() {
                     <ul className="home-contact-ul">
                         <li className="home-contact-li">FB: Kaweewat Noisuwan</li>
                         <li className="home-contact-li">Email: kaweewatnoisuwan@gmail.com</li>
-                        <li className="home-contact-li">Line-id: tonkla_123</li>
+                        <li className="home-contact-li">LineID: tonkla_123</li>
                         <li className="home-contact-li">Linkdin:<a href="https://www.linkedin.com/in/kaweewat-noisuwan">https://linkedin.com/in/kaweewat-noisuwan</a></li>
                         <li className="home-contact-li">Discord:<a href="https://discord.com/users/tkaweewat">https://discord.com/users/tkaweewat</a></li>
                     </ul>
