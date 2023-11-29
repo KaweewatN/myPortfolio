@@ -50,6 +50,22 @@ export default function AboutMe() {
 
                 </div>
 
+                <h2 className="about-me-work-title">WORK EXPERIENCE</h2>
+                <hr className="horizontal-line"></hr>
+
+                <div className="about-me-edu-container">
+
+                    <div className="about-me-edu-school-container">
+                        <img src="./image/nectec.svg" alt="nectecLogo" id="about-me-work-nectec"/>
+                        <div className="about-me-edu-text">
+                            <h2>National Electronics and Computer Technology Center (NECTEC)</h2>
+                            <h3>Speech and Text Understanding Research Team (STU)</h3>
+                            <p>June - July 2023</p>
+                        </div>
+                    </div>
+
+                </div>
+
                 <h1 className="about-me-interest-title">MY INTERESTS</h1>
                 <hr className="horizontal-line" ></hr>
                 <div className="about-me-interest-all-container">

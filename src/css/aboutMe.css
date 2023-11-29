@@ -19,7 +19,14 @@ div.about-me-edu-container {
     flex-direction: column;
     padding: 5vmax;
     padding-top: 0vmax;
-    padding-bottom: 0vmax;
+    padding-bottom: 2vmax;
+}
+
+h2.about-me-work-title {
+    color: #ffffff;
+    font-size: 2vmax;
+    padding-left: 5vmax;
+    padding-top: 7vmax;
 }
 
 div.about-me-interest-all-container {
@@ -80,6 +87,11 @@ img#about-me-edu-siit {
 
 img#about-me-edu-kkw {
     max-width: 11vmax;
+    padding-right: 1vmax;
+}
+
+img#about-me-work-nectec {
+    max-width: 19vmax;
     padding-right: 1vmax;
 }
 

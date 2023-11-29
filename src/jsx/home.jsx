@@ -205,7 +205,7 @@ export default function Home() {
 
             <section className="home-project" id="project">
                 <div className="home-project-title-link-div">
-                    <h1 className="home-project-title">PROJECT</h1>
+                    <h1 className="home-project-title">PROJECTS</h1>
                     <Link to="/project" className="home-project-seeAll">See all</Link>
                 </div>
                 <div className="home-project-all-container">
