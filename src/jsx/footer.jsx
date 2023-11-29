@@ -32,7 +32,7 @@ export default function Footer() {
                             className="contact-linkdin" target="_blank"><BsLinkedin></BsLinkedin></a>
                     </li>
                 </ul>
-            <p className="contact-rights">© 2023 Kaweewat.netlify All rights reserved.</p>
+            <p className="contact-rights">© 2023 Kaweewat.netlify.app All rights reserved.</p>
         </div>
     )
 }
