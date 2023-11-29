@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vmax;
+}
+
+p.contact {
+    color: #ffffff;
+    font-size: 1.5vmax;
+}
+
+div.contact-text-container {
+    width: 50%;
+}
+
+h1.contact-title {
+    font-size: 2vmax;
+    color: #fff;
+}
+
+p.contact-text {
+    margin-top: 20px;
+    font-size: 1.7vmax;
+    line-height: 3vmax;
+    color: 	#b5afaf;
+}
+
+ul.aboutme-social-media-ul {
+    margin-top: 25px;
+    width: 20vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.aboutme-social-media-li {
+    list-style: none;
+    font-size: 3vmax;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+li.aboutme-social-media-li:hover{
+    transform:translateY(-5px);
+}
+
+a.contact-facebook {
+    color: #3b5998;
+}
+
+a.contact-instagram {
+    color: #E4405F;
+}
+
+a.contact-discord {
+    color: #5865F2;
+}
+
+a.contact-github {
+    color: #fff;
+}
+
+a.contact-linkdin {
+    color: #0A66C2;
+}
+
+span.contact-contact-text-more-info:hover  {
+    text-decoration: underline;
+}
+
+ul.contact-social-media-ul {
+    margin-top: 25px;
+    width: 30vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.contact-social-media-li {
+    list-style: none;
+    font-size: 3.7vmax;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+li.contact-social-media-li:hover{
+    transform:translateY(-5px);
+}
+
+p.contact-rights {
+    margin-top: 2vmax;
+    font-size: 1.5vmax;
+    color: #ffffff;
+}
+
+@media (min-width: 200px) and (max-width:  820px) {
+    p.contact {
+        font-size: 2.2vmax;
+    }
+}

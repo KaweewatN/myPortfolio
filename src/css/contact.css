@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+div.contact-h2-container {
+    margin-top: 8vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form.contact-input-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5vmax 0 2.5vmax 0;
+    margin-bottom: 5vmax;
+}
+
+h2.contact-h2 {
+    float: center;
+    font-size: 2.7vmax;
+    color: #86FF70;
+}
+
+input.contact-input {
+    width: 50%;
+    font-size: 1.6vmax;
+    padding: 10px 20px 10px 20px;
+    margin-top: 1.5vmax;
+}
+
+textarea.contact-text-area {
+    width: 50%;
+    height: 15vmax;
+    font-size: 1.6vmax;
+    padding: 10px 20px 10px 20px;
+    margin-top: 1.5vmax;
+}
+
+input.contact-submit {
+    margin-top: 1.5vmax;
+    padding: 10px 20px 10px 20px;
+    width: 50%;
+    font-size: 1.6vmax;
+    border: 1.5px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+input.contact-submit:hover {
+    background-color: #469538;
+    border-color: #469538;
+}
+
+@media (min-width: 100px) and (max-width: 693px){
+    input.contact-input, textarea.contact-text-area {
+        width: 70%;
+    }
+}

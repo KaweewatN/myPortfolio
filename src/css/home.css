@@ -10,46 +10,12 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: rgb(31, 31, 33);
 }
 
-nav.top-menu-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 30px 0px 30px;
-    background-color: rgb(31, 31, 33, 0.8);
-}
-
-nav.top-menu-nav-mobile {
-    display: none;
-}
-
-.top-menu-ul {
-    display: flex;
-    min-width: 20vmax;
-    justify-content: space-between;
-}
-
-.top-menu-h2 {
-    color: #ffffff;
-    font-size: 2.3vmax;
-    position: relative;
-}
-
-.top-menu-ul > a {
-    text-decoration: none;
-}
-
-.top-menu-li {
-    font-size: 1.5vmax;
-    list-style: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-.top-menu-li:hover {
-    color: #86FF70;
-    text-decoration: underline;
+hr.horizontal-line {
+    border: 1px solid #555454;
+    margin: 1vmax 5vmax 0vmax 5vmax;
 }
 
 img.home-intro-image {
@@ -89,10 +55,17 @@ section.home-aboutme {
     background-color: rgb(31, 31, 33);
     padding: 6vmax 80px 30px 0px;
     padding-left: 4vmax;
+    display: flex;
+}
+
+div.home-aboutme-all-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 
 div.home-aboutme-text-container {
-    width: 50%;
+    width: 75%;
 }
 
 h1.home-aboutme-title {
@@ -107,64 +80,50 @@ p.home-aboutme-text {
     color: 	#b5afaf;
 }
 
-span.home-aboutme-text-more-info {
+button.home-aboutme-button {
+    margin-top: 2.5vmax;
+    padding: 1vmax 1.7vmax 1vmax 1.7vmax;
+    color: #ffffff;
     font-size: 1.5vmax;
-    color: #86FF70;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
     cursor: pointer;
 }
 
-span.home-aboutme-text-more-info:hover  {
-    text-decoration: underline;
-}
-
-ul.home-aboutme-social-media-ul {
-    margin-top: 25px;
-    width: 20vmax;
+div.home-about-me-button-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
-li.home-aboutme-social-media-li {
-    list-style: none;
-    font-size: 3vmax;
-    cursor: pointer;
-    transition: 0.5s;
+#about-me-link {
+    margin-right: 1vmax;
 }
 
-li.home-aboutme-social-media-li:hover{
-    transform:translateY(-5px);
+#download-cv {
+    margin-left: 1vmax;
 }
 
-a.home-facebook {
-    color: #3b5998;
-}
-
-a.home-instagram {
-    color: #E4405F;
-}
-
-a.home-discord {
-    color: #5865F2;
-}
-
-a.home-github {
-    color: #fff;
-}
-
-a.home-linkdin {
-    color: #0A66C2;
+button.home-aboutme-button:hover {
+    background-color: #469538;
+    border: 2px solid #469538;
 }
 
 div.home-aboutme-skills {
-    padding-top: 5vmax;
+    padding-top: 7vmax;
 }
 
-div.home-aboutme-skills-container {
+div.home-aboutme-skills-web-container {
     padding-top: 20px;
     padding-bottom: 10px;
     display: flex;
     position: relative;
+}
+
+div.home-aboutme-skills-mobile-container {
+    display: none;
+    width: 100%;
 }
 
 
@@ -175,28 +134,56 @@ p.home-aboutme-skills-title {
 }
 
 img.home-aboutme-skills-image-large {
-    width: 2.95vmax;
+    width: 3.2vmax;
+    height: 3.2vmax;
     margin-right: 1vmax;
     margin-top: 5px;
 }
 
 img.home-aboutme-skills-image {
-    width: 3.65vmax;
+    width: 4vmax;
     margin-right: 1vmax;
 }
 
 p.home-aboutme-skills-image {
-    font-size: 2.7vmax;
+    font-size: 3vmax;
     margin-right: 1vmax;
     color: #fff;
 }
 
+div.home-aboutme-myimage {
+    margin-top: 3vmax;
+    width: 31vmax;
+    height: 31vmax;
+    background-size: cover;
+    border-radius: 10% 30% 10% 30%;
+}
+
 section.home-project {
     background-color: rgb(31, 31, 33);
-    padding: 3vmax 3vmax 40px 3vmax;
+    padding: 5vmax 3vmax 40px 3vmax;
     display: flex;
     flex-direction: column;
 }
+
+div.home-project-title-link-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1vmax;
+}
+
+a.home-project-seeAll {
+    font-size: 1.7vmax;
+    color: #b5afaf;
+    text-decoration: none;
+}
+
+a.home-project-seeAll:hover {
+    text-decoration: underline;
+    color: #86FF70;
+}
+
 h1.home-project-title {
     font-size: 2vmax;
     color: #fff;
@@ -257,96 +244,25 @@ p.home-project-description {
 }
 
 section.home-contact {
+    display: flex;
+    justify-content: center;
     background-color: rgb(31, 31, 33);
-    padding: 3vmax 3vmax 40px 3vmax;
-    display: flex;
-    flex-direction: column;
+    padding-top: 5vmax;
 }
-h1.home-contact-title {
-    font-size: 2vmax;
-    color: #fff;
-    padding-left: 1vmax;
-}
-
-div.home-contact-container {
-    display: flex;
-    margin-bottom: 3vmax;
-}
-
-ul.home-contact-ul {
-    padding-left: 2vmax;
-    padding-top: 1vmax;
-}
-
-li.home-contact-li, li.home-contact-li>a {
-    font-size: 1.7vmax;
-    line-height: 3.24vmax;
-    color: 	#b5afaf;
-    margin-left: 1vmax;
-}
-
-li.home-contact-li > a:hover {
-    color: #86FF70;
-}
-
-
-
-div.home-contact-contact-me-container {
-    margin-left: 10vmax;
-}
-
-p.home-contact-contact-me-p {
-    padding-top: 1.1vmax;
-    font-size: 1.7vmax;
-    color: 	#b5afaf;
-}
-
 
 @media (min-width: 200px) and (max-width:  820px) {
 
-    nav.top-menu-nav {
+    h2.introduce-words-doing {
+        font-size: 3vmax;
+        color: #fff;
+    }
+
+    div.home-aboutme-myimage {
         display: none;
     }
 
-    nav.top-menu-nav-mobile{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 30px 30px 0px 30px;
-        background-color: rgb(31, 31, 33, 0.8);
-    }
-
-    button.top-menu-button {
-        background-color: transparent;
-        color: #ffffff;
-        border: 0;
-        font-size: 2vmax;
-    }
-
-    ul.top-menu-ul-mobile {
-        position: absolute;
-        top: 10vmax;
-        right: 5vmax;
-        width: 15%;
-        border: 1px solid rgb(129, 129, 129);
-        padding: 5px 10px 5px 10px;
-    }
-
-    ul.top-menu-ul-mobile > a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 1.5vmax;
-    }
-
-    ul.top-menu-ul-mobile > a:hover {
-        color: #86FF70;
-    }
-
-    li.top-menu-li-mobile {
-        list-style: none;
-        margin-bottom: 5px;
-        border-bottom: 1px solid rgb(129, 129, 129);
-        text-decoration: none;
+    div.home-aboutme-all-text-container {
+        min-width: 105%;
     }
 
     h1.introduce-words-name {
@@ -354,14 +270,41 @@ p.home-contact-contact-me-p {
         color: #fff;
     }
     
-    h2.introduce-words-doing {
-        font-size: 3.3vmax;
+    h1.home-aboutme-title {
+        font-size: 2.5vmax;
         color: #fff;
     }
 
     div.home-aboutme-text-container {
         width: 100%;
     }
+
+    p.home-aboutme-text {
+        font-size: 2.1vmax;
+    }
+
+    img.home-aboutme-skills-image-large {
+        width: 4.2vmax;
+        height: 4.2vmax;
+        margin-right: 1vmax;
+        margin-top: 5px;
+    }
+    
+    img.home-aboutme-skills-image {
+        width: 5vmax;
+        margin-right: 1vmax;
+    }
+    
+    p.home-aboutme-skills-image {
+        font-size: 4vmax;
+        margin-right: 1vmax;
+        color: #fff;
+    }
+
+    h1.home-project-title {
+        font-size: 2.5vmax;
+    }
+    
     
     div.home-project-all-container {
         display: flex;
@@ -392,13 +335,29 @@ p.home-contact-contact-me-p {
     p.home-project-description {
         color: #363636;
         margin-top: 10px;
-        font-size: 1.6vmax;
+        font-size: 1.8vmax;
     }
   }
 
 @media (min-width: 1px) and (max-width: 693px) {
     ul.top-menu-ul-mobile {
         width: 20%;
+    }
+}
+
+@media (min-width:200px) and (max-width: 535px) {
+    div.home-aboutme-skills-web-container {
+        display: none;
+    }
+
+    div.home-aboutme-skills-mobile-container {
+        display: flex;
+        width: 80vw;
+        margin-top: 2vmax;
+    }
+
+    div.home-aboutme-skills-container {
+        flex-direction: column;
     }
 }
 
@@ -416,4 +375,10 @@ p.home-contact-contact-me-p {
     div.home-project-container {
         width: 100%;
     }
+
+    p.home-project-description {
+        font-size: 1.7vmax;
+    }
 }
+
+
