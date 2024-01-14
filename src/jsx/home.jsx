@@ -114,8 +114,8 @@ export default function Home() {
                             <Tippy content="Java">
                                 <img src="./image/java.png" className="home-aboutme-skills-image" alt="java" />
                             </Tippy>
-                            <Tippy content="Swift">
-                                <img src="./image/swift.png" className="home-aboutme-skills-image-large" alt="swift" />
+                            <Tippy content="Go">
+                                <img src="./image/go.png" className="home-aboutme-skills-image-go" alt="go" />
                             </Tippy>
                             <Tippy content="Reactjs">
                                 <img src="./image/react.png" className="home-aboutme-skills-image" alt="react" />
@@ -161,8 +161,8 @@ export default function Home() {
                                 <Tippy content="Java">
                                     <img src="./image/java.png" className="home-aboutme-skills-image" alt="java" />
                                 </Tippy>
-                                <Tippy content="Swift">
-                                    <img src="./image/swift.png" className="home-aboutme-skills-image-large" alt="swift" />
+                                <Tippy content="Go">
+                                    <img src="./image/go.png" className="home-aboutme-skills-image-go" alt="go" />
                                 </Tippy>
                                 <Tippy content="Reactjs">
                                     <img src="./image/react.png" className="home-aboutme-skills-image" alt="react" />

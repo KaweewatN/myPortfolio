@@ -28,7 +28,7 @@ export default function Footer() {
                             target="_blank"><BsGithub></BsGithub></a>
                     </li>
                     <li className="contact-social-media-li">
-                        <a href="https://www.linkedin.com/in/kaweewat-noisuwan-6a3a9b259/" 
+                        <a href="https://www.linkedin.com/in/kaweewat-noisuwan-56155a2aa/" 
                             className="contact-linkdin" target="_blank"><BsLinkedin></BsLinkedin></a>
                     </li>
                 </ul>

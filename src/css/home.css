@@ -133,6 +133,13 @@ p.home-aboutme-skills-title {
     font-size: 1.8vmax;
 }
 
+img.home-aboutme-skills-image-go {
+    width: 4.3vmax;
+    height: 4.3vmax;
+    margin-right: 1vmax;
+    margin-top: 5px;
+}
+
 img.home-aboutme-skills-image-large {
     width: 3.2vmax;
     height: 3.2vmax;
@@ -288,6 +295,11 @@ section.home-contact {
         height: 4.2vmax;
         margin-right: 1vmax;
         margin-top: 5px;
+    }
+
+    img.home-aboutme-skills-image-go {
+        width: 5vmax;
+        height: 5vmax;
     }
     
     img.home-aboutme-skills-image {
