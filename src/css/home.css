@@ -164,6 +164,7 @@ div.home-aboutme-myimage {
     height: 31vmax;
     background-size: cover;
     border-radius: 10% 30% 10% 30%;
+    background-position: 35% 75%;
 }
 
 section.home-project {
