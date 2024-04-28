@@ -198,7 +198,7 @@ export default function Home() {
                 </div>
 
                 <div className="home-aboutme-myimage" 
-                    style={{backgroundImage: `url("./image/myPhoto.HEIC")`}}>
+                    style={{backgroundImage: `url("./image/MyPhoto.jpeg")`}}>
                 </div>
 
             </section>

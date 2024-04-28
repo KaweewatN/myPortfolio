@@ -22,7 +22,7 @@ export default function AboutMe() {
                         My ultimate goal is to merge my technical prowess with a profound understanding of startups and innovation, 
                         steering my own ventures towards success.
                     </p>
-                    <img src="./image/myPhoto.png" alt="myImage" className="about-me-image"/>
+                    <img src="./image/MyPhoto.jpeg" alt="myImage" className="about-me-image"/>
                 </div>
 
                 <h2 className="about-me-edu-title">EDUCATION</h2>
