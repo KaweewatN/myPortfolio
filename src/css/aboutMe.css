@@ -1,172 +1,204 @@
 hr.horizontal-line {
-    border: 1px solid #555454;
-    margin: 1vmax 5vmax 0vmax 5vmax;
+  border: 1px solid #555454;
+  margin: 1vmax 5vmax 0vmax 5vmax;
 }
 
 div.about-me-all-conatianer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 div.about-me-title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div.about-me-edu-container {
-    display: flex;
-    flex-direction: column;
-    padding: 5vmax;
-    padding-top: 0vmax;
-    padding-bottom: 2vmax;
+  display: flex;
+  flex-direction: column;
+  padding: 5vmax;
+  padding-top: 0vmax;
+  padding-bottom: 2vmax;
 }
 
-h2.about-me-work-title {
-    color: #ffffff;
-    font-size: 2vmax;
-    padding-left: 5vmax;
-    padding-top: 7vmax;
+h1.about-me-work-title {
+  color: #ffffff;
+  font-size: 2vmax;
+  padding-left: 5vmax;
+  padding-top: 7vmax;
 }
 
 div.about-me-interest-all-container {
-    display: flex;
-    flex-direction: column;
-    padding: 5vmax;
-    padding-top: 3vmax;
-    padding-bottom: 7vmax;
+  display: flex;
+  flex-direction: column;
+  padding: 5vmax;
+  padding-top: 3vmax;
+  padding-bottom: 7vmax;
 }
 
 h1.about-me-title {
-    padding-top: 5vmax;
-    font-size: 2.7vmax;
-    color: #86FF70;
+  padding-top: 5vmax;
+  font-size: 2.7vmax;
+  color: #86ff70;
 }
 
 h1.about-me-interest-title {
-    color: #ffffff;
-    font-size: 2vmax;
-    padding-left: 5vmax;
-    padding-top: 7vmax;
+  color: #ffffff;
+  font-size: 2vmax;
+  padding-left: 5vmax;
+  padding-top: 7vmax;
 }
 
 div.about-me-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vmax 10vmax 5vmax 10vmax;
+}
+
+p.aboutme-text {
+  color: #b5afaf;
+  font-size: 1.7vmax;
+  line-height: 3vmax;
+  margin-bottom: 3vmax;
+}
+
+.about-me-image {
+  width: 75%;
+  margin-bottom: 2.5vmax;
+}
+
+h2.about-me-edu-title {
+  margin-left: 5vmax;
+  font-size: 2vmax;
+  color: #ffffff;
+}
+
+img#about-me-edu-siit {
+  max-width: 17vmax;
+  padding-right: 2vmax;
+}
+
+img#about-me-edu-kkw {
+  max-width: 11vmax;
+  padding-right: 1vmax;
+}
+
+img#about-me-work-nectec {
+  max-width: 17vmax;
+  padding-right: 1vmax;
+}
+
+img#about-me-work-mfec {
+  max-width: 17vmax;
+  padding-right: 2vmax;
+}
+
+div.about-me-edu-school-container {
+  width: 100%;
+  margin-top: 3vmax;
+  padding: 0 1.5vmax;
+  display: flex;
+  align-items: center;
+}
+
+div.about-me-edu-text {
+  color: #b5afaf;
+}
+
+div.about-me-edu-text > h2 {
+  color: #ffffff;
+  font-size: 2.2vmax;
+}
+
+div.about-me-edu-text > h3 {
+  margin-top: 0.3rem;
+  font-size: 1.8vmax;
+}
+
+div.about-me-edu-text > p {
+  margin-top: 1vmax;
+  font-size: 1.6vmax;
+}
+
+div#kkw-text {
+  margin-left: 6vmax;
+}
+
+div.about-me-interst-sub-container {
+  display: flex;
+  flex-direction: flex;
+  align-items: left;
+}
+
+div.about-me-image-container {
+  width: 100vw;
+  background-color: red;
+}
+
+img.about-me-interst-image {
+  max-width: 19vmax;
+  max-height: 12vmax;
+  margin-bottom: 2vmax;
+}
+
+h3.about-me-interst-text {
+  font-size: 2vmax;
+  color: #ffffff;
+  margin-left: 2vmax;
+}
+
+@media (min-width: 200px) and (max-width: 820px) {
+  div.about-me-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2vmax 10vmax 5vmax 10vmax;
-}
+    padding: 2vmax 6vmax 5vmax 6vmax;
+  }
 
-p.aboutme-text {
-    color: #b5afaf;
-    font-size: 1.7vmax;
-    line-height: 3vmax;
-    margin-bottom: 3vmax;
-}
+  p.aboutme-text {
+    font-size: 2.2vmax;
+  }
 
-.about-me-image {
-    width: 75%;
+  .about-me-image {
+    width: 90%;
     margin-bottom: 2.5vmax;
-}
+  }
 
-h2.about-me-edu-title {
-    margin-left: 5vmax;
-    font-size: 2vmax;
-    color: #ffffff;
-}
+  h2.about-me-edu-title,
+  h1.about-me-work-title,
+  h1.about-me-interest-title {
+    font-size: 2.5vmax;
+  }
 
-div#kkw-container {
-    margin-left: 2vmax;
-}
-
-img#about-me-edu-siit {
-    max-width: 17vmax;
-    padding-right: 2vmax;
-}
-
-img#about-me-edu-kkw {
-    max-width: 11vmax;
-    padding-right: 1vmax;
-}
-
-img#about-me-work-nectec {
-    max-width: 19vmax;
-    padding-right: 1vmax;
-}
-
-div.about-me-edu-school-container {
+  div.about-me-edu-school-container {
+    width: 100%;
     margin-top: 3vmax;
     padding: 0 1.5vmax;
     display: flex;
     align-items: center;
-}
+    justify-content: space-between;
+  }
 
-div.about-me-edu-text {
+  div.about-me-edu-text {
     color: #b5afaf;
-}
+    max-width: 16vmax;
+  }
 
-div.about-me-edu-text > h2 {
-    color: #ffffff;
-    font-size: 2.2vmax;
-}
+  div#kkw-text {
+    margin-left: 0vmax;
+  }
 
-div.about-me-edu-text > h3 {
-    font-size: 1.8vmax;
-}
-
-div.about-me-edu-text > p {
-    margin-top: 1vmax;
-    font-size: 1.6vmax;
-}
-
-div#kkw-text {
-    margin-left: 3.8vmax;
-}
-
-
-div.about-me-interst-sub-container {
-    display: flex;
-    flex-direction: flex;
-    align-items: left;
-}
-
-div.about-me-image-container {
-    width: 100vw;
-    background-color: red;
-}
-
-img.about-me-interst-image {
-    max-width: 19vmax;
-    max-height: 12vmax;
-    margin-bottom: 2vmax;
-}
-
-h3.about-me-interst-text {
+  div.about-me-edu-text > h3 {
+    margin-top: 0.3rem;
     font-size: 2vmax;
-    color: #ffffff;
-    margin-left: 2vmax;
-} 
+  }
 
-@media (min-width: 200px) and (max-width:  820px) {
-    div.about-me-div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2vmax 6vmax 5vmax 6vmax;
-    }
-
-    p.aboutme-text {
-        font-size: 2.1vmax;
-    }
-
-    .about-me-image {
-        width: 90%;
-        margin-bottom: 2.5vmax;
-    }
-
-    h2.about-me-edu-title, h1.about-me-interest-title {
-        font-size: 2.5vmax;
-    }
+  div.about-me-edu-text > p {
+    margin-top: 1vmax;
+    font-size: 1.9vmax;
+  }
 }
