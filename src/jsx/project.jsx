@@ -45,7 +45,7 @@ export default function Project() {
 
       <div className="project-all-container">
         {projects
-          ?.slice(0, numProject)
+          ?.slice(-numProject)
           .reverse()
           .map((res) => (
             <a

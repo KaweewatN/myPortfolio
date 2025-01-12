@@ -357,7 +357,7 @@ export default function Home() {
         </div>
         <div className="home-project-all-container">
           {projects
-            ?.slice(0, 6)
+            .slice(-6)
             .reverse()
             .map((res) => (
               <a
