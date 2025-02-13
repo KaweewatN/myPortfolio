@@ -48,9 +48,18 @@ export const projects = [
     languages: "NextJS, PostgreSQL, Prisma ORM, TailwindCSS",
     githubLink: "https://task-management-web.vercel.app/",
   },
-
   {
     id: 6,
+    name: "Swipe Christmas Traveller",
+    image: "./image/projects/swipe-christmas.png",
+    description:
+      "Developed a front-end Christmas games project that was enjoyed by approximately 5,337 users during the holiday season.",
+    languages: "NextJS, TailwindCSS, Redux",
+    githubLink: "https://swipe-christmas-2024.vercel.app/en",
+  },
+
+  {
+    id: 7,
     name: "SIIT Innovation Club Website",
     image: "./image/projects/sinno.png",
     description:
@@ -59,10 +68,10 @@ export const projects = [
     githubLink: "https://siit-innoclub.pages.dev/",
   },
   {
-    id: 7,
+    id: 8,
     name: "ISI-Tutor-System",
     image:
-      "https://images.unsplash.com/flagged/photo-1564445477052-8a3787406bbf?q=80&w=2992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnv3bHuv0iGLGnkZ_vLi7Bnj8SbWgOpJB8Zg&s",
     description:
       "ISI-Tutor-System is a tutoring system that allows students to book a tutor for their subjects. The project is created using Next.js, PostgreSQL, and TailwindCSS. The project includes CRUD functions and connects to a database (PostgreSQL)",
     languages: "Next.js, PostgreSQL, Prisma ORM, TailwindCSS",
@@ -70,7 +79,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     name: "Sharehood Renting System",
     image: "./image/projects/shareHood.png",
     description:

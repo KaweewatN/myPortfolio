@@ -217,6 +217,7 @@ div.home-project-container {
   display: flex;
   flex-direction: column;
   width: 28.5vmax;
+  height: 35vmax;
   transition: 0.5s;
   cursor: pointer;
 }

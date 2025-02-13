@@ -14,12 +14,18 @@ export default function Project() {
       window.innerHeight + document.documentElement.scrollTop + 1 >=
       document.documentElement.scrollHeight
     ) {
-      getNumProject((prev) => prev + 3);
+      setInterval(() => {
+        getNumProject((prev) => prev + 3);
+      }, 500);
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   //   const fetchData = async () => {

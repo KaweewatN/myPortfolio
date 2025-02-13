@@ -9,7 +9,7 @@ import { SiDjango } from "react-icons/si";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 // constant
-import { CV } from "../data/constant.js";
+import { CV, ABOUT_ME_TEXT } from "../data/constant.js";
 import { projects } from "../data/projects.js";
 
 export default function Home() {
@@ -75,18 +75,7 @@ export default function Home() {
           <div className="home-aboutme-text-container">
             <div className="home-aboutme-div">
               <h1 className="home-aboutme-title">ABOUT ME</h1>
-              <p className="home-aboutme-text">
-                Hello, my name is Kaweewat Noisuwan, I am currently studying in
-                Digital engineering major at Sirindhorn international institute
-                of technology (SIIT), Thammasat University. I have a charm on
-                programming, especially on web development and mobile
-                application. As a student who thrives at the intersection of
-                technology and business, I dream of not just being a programmer,
-                but a catalyst for change and innovation. My ultimate goal is to
-                merge my technical prowess with a profound understanding of
-                startups and innovation, steering my own ventures towards
-                success.
-              </p>
+              <p className="home-aboutme-text">{ABOUT_ME_TEXT}</p>
             </div>
             <div className="home-about-me-button-container">
               <Link

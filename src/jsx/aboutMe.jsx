@@ -1,6 +1,7 @@
 import "../css/aboutMe.css";
 import NavBar from "./navBar";
 import Footer from "./footer";
+import { ABOUT_ME_TEXT } from "../data/constant.js";
 
 export default function AboutMe() {
   return (
@@ -13,17 +14,7 @@ export default function AboutMe() {
         </div>
 
         <div className="about-me-div">
-          <p className="aboutme-text">
-            Hello, my name is Kaweewat Noisuwan, I am currently studying in
-            Digital engineering major at Sirindhorn international institute of
-            technology (SIIT), Thammasat University. I have a charm on
-            programming, especially on web development and mobile application.
-            As a student who thrives at the intersection of technology and
-            business, I dream of not just being a programmer, but a catalyst for
-            change and innovation. My ultimate goal is to merge my technical
-            prowess with a profound understanding of startups and innovation,
-            steering my own ventures towards success.
-          </p>
+          <p className="aboutme-text">{ABOUT_ME_TEXT}</p>
           <img
             src="./image/MyPhoto.jpeg"
             alt="myImage"

@@ -26,6 +26,9 @@ export default function NavBar() {
           <Link to="/project">
             <li className="top-menu-li">PROJECTS</li>
           </Link>
+          <Link to="/activity">
+            <li className="top-menu-li">ACTIVITIES</li>
+          </Link>
           <Link to="/contact">
             <li className="top-menu-li">CONTACT</li>
           </Link>
@@ -48,6 +51,9 @@ export default function NavBar() {
             </Link>
             <Link to="/project" onClick={hangleToggle}>
               <li className="top-menu-li-mobile">PROJECTS</li>
+            </Link>
+            <Link to="/activity" onClick={hangleToggle}>
+              <li className="top-menu-li-mobile">ACTIVITIES</li>
             </Link>
             <Link to="/contact" onClick={hangleToggle}>
               <li className="top-menu-li-mobile">CONTACT</li>

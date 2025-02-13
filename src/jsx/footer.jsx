@@ -1,65 +1,23 @@
 import "../css/footer.css";
-import { BsFacebook } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { BsDiscord } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
+import socialMediaLinks from "../data/socialMedia";
 
 export default function Footer() {
   return (
     <div className="contact-div">
       <p className="contact">CONTACT ME</p>
       <ul className="contact-social-media-ul">
-        <li className="contact-social-media-li">
-          <a
-            href="https://www.facebook.com/Kaweewat%20Noisuwan"
-            className="contact-facebook"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsFacebook></BsFacebook>
-          </a>
-        </li>
-        <li className="contact-social-media-li">
-          <a
-            href="https://www.instagram.com/_klarrrr/?hl=en"
-            className="contact-instagram"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsInstagram></BsInstagram>
-          </a>
-        </li>
-        <li className="contact-social-media-li">
-          <a
-            href="https://discord.com/users/tkaweewat"
-            className="contact-discord"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsDiscord></BsDiscord>
-          </a>
-        </li>
-        <li className="contact-social-media-li">
-          <a
-            href="https://github.com/KaweewatN"
-            className="contact-github"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsGithub></BsGithub>
-          </a>
-        </li>
-        <li className="contact-social-media-li">
-          <a
-            href="https://www.linkedin.com/in/kaweewat-noisuwan-56155a2aa/"
-            className="contact-linkdin"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsLinkedin></BsLinkedin>
-          </a>
-        </li>
+        {socialMediaLinks.map((link, index) => (
+          <li className="contact-social-media-li" key={index}>
+            <a
+              href={link.href}
+              className={link.className}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {link.icon}
+            </a>
+          </li>
+        ))}
       </ul>
       <p className="contact-rights">
         © 2023 Kaweewat.netlify.app All rights reserved.

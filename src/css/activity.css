@@ -1,17 +1,17 @@
-div.project-title-container {
+div.activity-title-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 5vmax;
 }
 
-h2.project-title {
+h2.activity-title {
   font-size: 2.7vmax;
   color: #86ff70;
   margin-left: 2vmax;
 }
 
-div.project-all-container {
+div.activity-all-container {
   padding: 5vmax 5vmax 8vmax 5vmax;
   background-color: rgb(31, 31, 33);
   display: grid;
@@ -21,79 +21,79 @@ div.project-all-container {
   row-gap: 3vmax;
 }
 
-a.project-github-link {
+a.activity-github-link {
   text-decoration: none;
 }
 
-div.project-container {
+div.activity-container {
   background-color: #fff;
   display: flex;
   flex-direction: column;
   width: 27.5vmax;
-  height: 35vmax;
+  height: 29vmax;
   transition: 0.5s;
   cursor: pointer;
 }
 
-div.project-container:hover {
+div.activity-container:hover {
   transform: scale(102%);
 }
 
-div.project-image {
+div.activity-image {
   height: 18.5vmax;
   background-size: cover;
 }
 
-div.project-text-container {
-  padding: 0px 2vmax 2vmax 2vmax;
+div.activity-text-container {
+  padding: 0px 2vmax 0 2vmax;
 }
 
-h3.project-title {
+h3.activity-title {
   color: #469538;
   margin-top: 20px;
   font-size: 1.7vmax;
 }
 
-p.project-languages {
+p.activity-languages {
   font-size: 1.3vmax;
   color: #898989;
 }
 
-p.project-description {
+p.activity-description {
   color: #363636;
   margin-top: 10px;
   font-size: 1.3vmax;
 }
 
 @media (min-width: 200px) and (max-width: 820px) {
-  div.project-all-container {
+  div.activity-all-container {
     display: flex;
     flex-direction: column;
     margin-left: 1vmax;
     margin-right: 1vmax;
     padding: 3.5vmax;
   }
-  div.project-container {
+  div.activity-container {
     flex-direction: column;
     width: 100%;
   }
 
-  img.project-image {
+  img.activity-image {
     height: 20vmax;
   }
 
-  h3.project-title {
+  h3.activity-title {
     color: #469538;
     margin-top: 20px;
     font-size: 2vmax;
   }
 
-  p.project-languages {
+  p.activity-languages {
     font-size: 1.6vmax;
     color: #898989;
   }
 
-  p.project-description {
+  p.activity-description {
     color: #363636;
     margin-top: 10px;
     font-size: 1.7vmax;
@@ -101,7 +101,7 @@ p.project-description {
 }
 
 @media (min-width: 821px) and (max-width: 1290px) {
-  div.project-all-container {
+  div.activity-all-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: left;
@@ -111,11 +111,11 @@ p.project-description {
     margin-right: 1vmax;
   }
 
-  div.project-container {
+  div.activity-container {
     width: 100%;
   }
 
-  p.home-project-description {
+  p.home-activity-description {
     font-size: 1.7vmax;
   }
 }
