@@ -32,7 +32,7 @@ test("renders About Me page", () => {
   // Check for the presence of the image with alt text "myImage"
   const myImage = screen.getByAltText("myImage");
   expect(myImage).toBeInTheDocument();
-  expect(myImage).toHaveAttribute("src", "./image/MyPhoto.jpeg");
+  expect(myImage).toHaveAttribute("src", "./image/MyPhoto.jpg");
 
   // Check for the presence of the SIIT logo
   const siitLogo = screen.getByAltText("siitLogo");

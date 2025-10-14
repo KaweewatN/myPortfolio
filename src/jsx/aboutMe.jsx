@@ -16,7 +16,7 @@ export default function AboutMe() {
         <div className="about-me-div">
           <p className="aboutme-text">{ABOUT_ME_TEXT}</p>
           <img
-            src="./image/MyPhoto.jpeg"
+            src="./image/MyPhoto.jpg"
             alt="myImage"
             className="about-me-image"
           />
