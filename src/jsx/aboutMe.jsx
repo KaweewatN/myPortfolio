@@ -59,7 +59,7 @@ export default function AboutMe() {
         <div className="about-me-edu-container">
           <div className="about-me-edu-school-container">
             <img
-              src="./image/nectec.svg"
+              src="./image/companies/nectec-logo.svg"
               alt="nectecLogo"
               id="about-me-work-nectec"
             />
@@ -74,7 +74,7 @@ export default function AboutMe() {
 
           <div className="about-me-edu-school-container">
             <img
-              src="./image/mfec.png"
+              src="./image/companies/mfec-logo.png"
               alt="mfecLogo"
               id="about-me-work-mfec"
             />
@@ -82,6 +82,19 @@ export default function AboutMe() {
               <h2>MFEC Public Company Limited</h2>
               <h3>Software Developer Team</h3>
               <p>June - August 2024</p>
+            </div>
+          </div>
+
+          <div className="about-me-edu-school-container">
+            <img
+              src="./image/companies/skooldio-logo.png"
+              alt="nectecLogo"
+              id="about-me-work-nectec"
+            />
+            <div className="about-me-edu-text">
+              <h2>Skooldio</h2>
+              <h3>Site Reliability Engineer Team</h3>
+              <p>June - July 2025</p>
             </div>
           </div>
         </div>

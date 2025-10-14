@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     id: 3,
-    name: "SIIT Student Response Analytics",
+    name: "Data-Driven Insights on Student Perceptions of SIIT OSP Scholarship Program",
     image:
       "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
@@ -86,5 +86,36 @@ export const projects = [
       "Sharehood is a renting system that allows users to rent items from other users. The project is created using Next.js, PostgreSQL, and TailwindCSS, and it also includes PWA features for using the website in the phone",
     languages: "React, Next.js, PostgreSQL, TailwindCSS",
     githubLink: "https://share-hood.vercel.app/",
+  },
+  {
+    id: 10,
+    name: "Kong Khlang – Warehouse Management System",
+    image: "./image/projects/kongKhlang.png",
+    description:
+      "Developed a web-based Warehouse Management System using React.js and Node.js to streamline inventory operations for Business Application course.",
+    languages: "React.js, Node.js, Chakra UI",
+    githubLink:
+      "https://github.com/KaweewatN/des422-warehouse-inventory-app.git",
+    websiteLink: "https://kong-khlang.vercel.app/",
+  },
+  {
+    id: 11,
+    name: "HaveSomeFund – Crowdfunding Platform",
+    image: "./image/projects/haveSomeFund.png",
+    description:
+      "Served as Project Lead and developed the full-stack of a web-based crowdfunding platform using Next.js for the System Analysis and Design course.",
+    languages: "Next.js, TailwindCSS",
+    githubLink:
+      "https://github.com/KaweewatN/HaveSomeFund-Crowdfunding-Platform.git",
+  },
+  {
+    id: 12,
+    name: "Backdoor Framework",
+    image:
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "A modular, educational backdoor framework for ethical hacking and cybersecurity training. Features include keylogging, screen/audio/webcam capture, privilege escalation, and network discovery. For Ethical Hacking class",
+    languages: "Python, Linux",
+    githubLink: "https://github.com/KaweewatN/DES484_Backdoor",
   },
 ];

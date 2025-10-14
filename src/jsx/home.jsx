@@ -1,6 +1,7 @@
 import "../css/home.css";
 import Footer from "./footer";
 import NavBar from "./navBar";
+import ExperienceTimeline from "./components/experienceTimeline/experienceTimeline.jsx";
 import { Link } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -88,7 +89,7 @@ export default function Home() {
 
               <a href={CV} target="_blank" rel="noreferrer">
                 <button className="home-aboutme-button" id="download-cv">
-                  DOWNLOAD CV
+                  VIEW MY CV
                 </button>
               </a>
             </div>
@@ -133,18 +134,25 @@ export default function Home() {
                   alt="java"
                 />
               </Tippy>
-              <Tippy content="Go">
+              {/* <Tippy content="Go">
                 <img
                   src="./image/go.png"
                   className="home-aboutme-skills-image-go"
                   alt="go"
                 />
-              </Tippy>
+              </Tippy> */}
               <Tippy content="Reactjs">
                 <img
                   src="./image/react.png"
                   className="home-aboutme-skills-image"
                   alt="react"
+                />
+              </Tippy>
+              <Tippy content="Node.js">
+                <img
+                  src="./image/node-js.svg"
+                  className="home-aboutme-skills-image"
+                  alt="node-js"
                 />
               </Tippy>
 
@@ -156,6 +164,13 @@ export default function Home() {
                 />
               </Tippy>
 
+              <Tippy content="NestJS">
+                <img
+                  src="./image/nest-js.svg"
+                  className="home-aboutme-skills-image"
+                  alt="NestJS"
+                />
+              </Tippy>
               <Tippy content="Expressjs">
                 <img
                   src="./image/expressjs.png"
@@ -180,13 +195,7 @@ export default function Home() {
                   <BsGithub></BsGithub>
                 </p>
               </Tippy>
-              <Tippy content="Gitlab">
-                <img
-                  src="./image/gitlab.png"
-                  className="home-aboutme-skills-image"
-                  alt="gitlab"
-                />
-              </Tippy>
+
               <Tippy content="SQL">
                 <img
                   src="./image/sql.png"
@@ -206,6 +215,13 @@ export default function Home() {
                   src="./image/docker.png"
                   className="home-aboutme-skills-image"
                   alt="docker"
+                />
+              </Tippy>
+              <Tippy content="AWS">
+                <img
+                  src="./image/aws.avif"
+                  className="home-aboutme-skills-image"
+                  alt="aws"
                 />
               </Tippy>
             </div>
@@ -247,18 +263,25 @@ export default function Home() {
                     alt="java"
                   />
                 </Tippy>
-                <Tippy content="Go">
+                {/* <Tippy content="Go">
                   <img
                     src="./image/go.png"
                     className="home-aboutme-skills-image-go"
                     alt="go"
                   />
-                </Tippy>
+                </Tippy> */}
                 <Tippy content="Reactjs">
                   <img
                     src="./image/react.png"
                     className="home-aboutme-skills-image"
                     alt="react"
+                  />
+                </Tippy>
+                <Tippy content="Node.js">
+                  <img
+                    src="./image/node-js.svg"
+                    className="home-aboutme-skills-image"
+                    alt="node-js"
                   />
                 </Tippy>
               </div>
@@ -269,6 +292,13 @@ export default function Home() {
                     src="./image/nextJS.svg"
                     className="home-aboutme-skills-image-go"
                     alt="nextJS"
+                  />
+                </Tippy>
+                <Tippy content="NestJS">
+                  <img
+                    src="./image/nest-js.svg"
+                    className="home-aboutme-skills-image"
+                    alt="NestJS"
                   />
                 </Tippy>
                 <Tippy content="Expressjs">
@@ -295,13 +325,7 @@ export default function Home() {
                     <BsGithub></BsGithub>
                   </p>
                 </Tippy>
-                <Tippy content="Gitlab">
-                  <img
-                    src="./image/gitlab.png"
-                    className="home-aboutme-skills-image"
-                    alt="gitlab"
-                  />
-                </Tippy>
+
                 <Tippy content="SQL">
                   <img
                     src="./image/sql.png"
@@ -326,6 +350,13 @@ export default function Home() {
                     alt="docker"
                   />
                 </Tippy>
+                <Tippy content="AWS">
+                  <img
+                    src="./image/aws.avif"
+                    className="home-aboutme-skills-image"
+                    alt="aws"
+                  />
+                </Tippy>
               </div>
             </div>
           </div>
@@ -335,6 +366,10 @@ export default function Home() {
           className="home-aboutme-myimage"
           style={{ backgroundImage: `url("./image/MyPhoto.jpeg")` }}
         ></div>
+      </section>
+
+      <section className="home-experience" id="experience">
+        <ExperienceTimeline />
       </section>
 
       <section className="home-project" id="project">

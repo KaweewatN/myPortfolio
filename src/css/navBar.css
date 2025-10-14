@@ -12,7 +12,7 @@ nav.top-menu-nav-mobile {
 
 .top-menu-ul {
   display: flex;
-  min-width: 30vmax;
+  min-width: 25vmax;
   justify-content: space-between;
 }
 
