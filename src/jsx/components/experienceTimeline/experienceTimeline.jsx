@@ -22,7 +22,8 @@ export default function ExperienceTimeline() {
               <h2 className="timeline-job-title">{exp.title}</h2>
               <h3 className="timeline-company">{exp.company}</h3>
               <div>
-                <span className="timeline-location">{exp.location}</span> |{" "}
+                <span className="timeline-location">{exp.location}</span> |
+                {", "}
                 <span className="timeline-period">{exp.period}</span>
               </div>
               <ul className="timeline-responsibilities">
